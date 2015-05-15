@@ -40,6 +40,8 @@ What does the .class file represent?
 
 Assignment: ASCII Art, "Lab 1.pdf"
 
+What are the steps to commit and push in GIT?
+
 --------------------------------
 
 How do you access command line arguments?
