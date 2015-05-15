@@ -14,14 +14,14 @@ public class Main {
 Say what each piece does, what it is, and what alternatives there could be. And what each one of those alternatives would do.
 
 - public
-- class 
+- class
 - Main
 - public
 - static
-- void 
+- void
 - main
 - String[]
-- args 
+- args
 - System.out.println("Hello World!");
 - "Hello World!"
 
