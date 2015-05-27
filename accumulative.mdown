@@ -44,29 +44,31 @@ What are the steps to commit and push in GIT?
 
 --------------------------------
 
-How do you access command line arguments?
-How do you access STDIN?
-What is STDIN?
-What is STDIN, STDOUT, STDERR? And Whats the difference?
+		How do you access command line arguments? system.out
+How do you access STDIN? using teh scanner(System.in)
+What is STDIN? standard input that can be changed while the program is running
+What is STDIN, STDOUT, STDERR? And Whats the difference? out is taking the output and err is error
 Whats the difference between STDIN and command line arguments?
-
+stdin is used while the program is run
 Whats the difference between STD* and file access?
+file acces writes with the info it gets
+What is a class and how do you define one in Java? a template	
+What is a method and how do you define one in Java? a thing that does stuff you want
+What is an instance variable and how do you define one in Java? a variable within the object
+What is an local variable and how do you define one in Java? traits of an object predefined
+What is the difference between an instance variable and a local variable? local cant be changed
 
-What is a class and how do you define one in Java?
-What is a method and how do you define one in Java?
-What is an instance variable and how do you define one in Java?
-What is an local variable and how do you define one in Java?
-What is the difference between an instance variable and a local variable?
+What is the difference between an object and a class? a class sets the attributes for objects
+How do you create a object in Java? Int i = new int
+How do you access an instance variable in that object?  private int root
+How do you access a method in that object? while
+How do you access a local variable in that object? int count = 0
 
-What is the difference between an object and a class?
-How do you create a object in Java?
-How do you access an instance variable in that object?
-How do you access a method in that object?
-How do you access a local variable in that object?
+What is `this` and how do you use it? it references the current object allowing for access to said object
 
-What is `this` and how do you use it?
+What is an `enum` and how can you use one? it allows for a variable to have multiple predefined constants
+Give me an example of an enum, create it then use it in an imaginary context. public enum direction {
+	NORTH, SOUTH, EAST, WEST
+}
 
-What is an `enum` and how can you use one?
-Give me an example of an enum, create it then use it in an imaginary context.
-
-How do you define a JavaDoc comment?
+How do you define a JavaDoc comment? the structure template for java to format the code.
