@@ -29,119 +29,124 @@ public class AsciiArt {
 		letterM();
 		Scanner scan = new Scanner(System.in);
 		String str = "";
-		while (scan.hasNext() && !str.trim().equals("exit")) {
+		while (scan.hasNext()) {
+			if (str.equals("quit")) {
+				return;
+			} else {
 			str = scan.nextLine();
-			for (int chars = 0; chars < str.length(); chars++){
 
-				char c = str.charAt(chars);
-				switch(c) {
-					case 'a': 
-					case 'A': 
-					letterA();
-					break;
-					case 'b': 
-					case 'B': 
-					letterB();
-					break;
-					case 'c': 
-					case 'C': 
-					letterC();
-					break;
-					case 'd': 
-					case 'D': 
-					letterD();
-					break;
-					case 'e': 
-					case 'E': 
-					letterE();
-					break;
-					case 'f': 
-					case 'F': 
-					letterF();
-					break;
-					case 'g': 
-					case 'G': 
-					letterG();
-					break;
-					case 'h': 
-					case 'H': 
-					letterH();
-					break;
-					case 'i': 
-					case 'I': 
-					letterI();
-					break;
-					case 'j': 
-					case 'J': 
-					letterJ();
-					break;
-					case 'k': 
-					case 'K': 
-					letterK();
-					break;
-					case 'l': 
-					case 'L': 
-					letterL();
-					break;
-					case 'n': 
-					case 'N': 
-					letterN();
-					break;
-					case 'p': 
-					case 'P': 
-					letterP();
-					break;
-					case 'q': 
-					case 'Q': 
-					letterQ();
-					break;
-					case 'r': 
-					case 'R': 
-					letterR();
-					break;
-					case 'S': 
-					case 's': 
-					letterS();
-					break;
-					case 't': 
-					case 'T': 
-					letterT();
-					break;
-					case 'u': 
-					case 'U': 
-					letterU();
-					break;
-					case 'v': 
-					case 'V': 
-					letterV();
-					break;
-					case 'W': 
-					case 'w': 
-					letterW();
-					break;
-					case 'X': 
-					case 'x': 
-					letterX();
-					break;
-					case 'y': 
-					case 'Y': 
-					letterY();
-					break;
-					case 'z': 
-					case 'Z': 
-					letterZ();
-					break;
+				for (int chars = 0; chars < str.length(); chars++){
 
-					case 'o':
-					case 'O': 
-					letterO();
-					break;
+					char c = str.charAt(chars);
+					switch(c) {
+						case 'a': 
+						case 'A': 
+						letterA();
+						break;
+						case 'b': 
+						case 'B': 
+						letterB();
+						break;
+						case 'c': 
+						case 'C': 
+						letterC();
+						break;
+						case 'd': 
+						case 'D': 
+						letterD();
+						break;
+						case 'e': 
+						case 'E': 
+						letterE();
+						break;
+						case 'f': 
+						case 'F': 
+						letterF();
+						break;
+						case 'g': 
+						case 'G': 
+						letterG();
+						break;
+						case 'h': 
+						case 'H': 
+						letterH();
+						break;
+						case 'i': 
+						case 'I': 
+						letterI();
+						break;
+						case 'j': 
+						case 'J': 
+						letterJ();
+						break;
+						case 'k': 
+						case 'K': 
+						letterK();
+						break;
+						case 'l': 
+						case 'L': 
+						letterL();
+						break;
+						case 'n': 
+						case 'N': 
+						letterN();
+						break;
+						case 'p': 
+						case 'P': 
+						letterP();
+						break;
+						case 'q': 
+						case 'Q': 
+						letterQ();
+						break;
+						case 'r': 
+						case 'R': 
+						letterR();
+						break;
+						case 'S': 
+						case 's': 
+						letterS();
+						break;
+						case 't': 
+						case 'T': 
+						letterT();
+						break;
+						case 'u': 
+						case 'U': 
+						letterU();
+						break;
+						case 'v': 
+						case 'V': 
+						letterV();
+						break;
+						case 'W': 
+						case 'w': 
+						letterW();
+						break;
+						case 'X': 
+						case 'x': 
+						letterX();
+						break;
+						case 'y': 
+						case 'Y': 
+						letterY();
+						break;
+						case 'z': 
+						case 'Z': 
+						letterZ();
+						break;
 
-					case 'm':
-					case 'M': 
-					letterM();
-					break;
+						case 'o':
+						case 'O': 
+						letterO();
+						break;
 
+						case 'm':
+						case 'M': 
+						letterM();
+						break;
+
+					}
 				}
 			}
 		}

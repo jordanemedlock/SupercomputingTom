@@ -72,3 +72,28 @@ Give me an example of an enum, create it then use it in an imaginary context. pu
 }
 
 How do you define a JavaDoc comment? the structure template for java to format the code.
+
+string stuff:
+String c = "abc".substring(2,3);
+     String d = cde.substring(1, 2);
+ substrings can be added to other strings
+
+ The Java language provides special support for the string concatenation operator ( + ), and for conversion of other objects to strings. String concatenation is implemented through the StringBuilder(or StringBuffer) class and its append method.
+ strings can build on other strings and convert non strings to strings
+
+ A String represents a string in the UTF-16 format in which supplementary characters are represented by surrogate pairs (see the section Unicode Character Representations in the Character class for more information). Index values refer to char code units, so a supplementary character uses two positions in a String - storing strings is different than other stuff
+
+ comparator strings allow you to compare one string to another like its a template.
+
+ public String(byte[] bytes,
+      int offset,
+      int length,
+      Charset charset)
+
+      works with the charset function to decode a subarray of bytes and traslate it into charset
+
+pointat allows for java to single out parts of a string
+
+content equals is a function to have strings be different variables but contain the same thing as a boolean function
+
+regionmatches are weird. they compare sub strings and try to find if the character sequences are the same
