@@ -97,3 +97,23 @@ pointat allows for java to single out parts of a string
 content equals is a function to have strings be different variables but contain the same thing as a boolean function
 
 regionmatches are weird. they compare sub strings and try to find if the character sequences are the same
+
+Scanner has a whitespace delimiter called Character.isWhitespace
+
+The next() and hasNext() methods and their primitive-type companion methods (such as nextInt() and hasNextInt()) first skip any input that matches the delimiter pattern, and then attempt to return the next token. Both hasNext and next methods may block waiting for further input. Whether a hasNext method blocks has no connection to whether or not its associated next method will block.
+
+The findInLine(java.lang.String), findWithinHorizon(java.lang.String, int), and skip(java.util.regex.Pattern) methods operate independently of the delimiter pattern. These methods will attempt to match the specified pattern with no regard to delimiters in the input and thus can be used in special circumstances where delimiters are not relevant. These methods may block waiting for more input.
+
+public Scanner(InputStream source) allows input from only one input stream
+
+scanner file allows for you to scan files
+
+scanner path helps file by producing values from the scanned file
+
+readable byte channel does the same thing but with channels
+
+next uses pattern recognition
+
+hasNext returns true if the next complete token matches the pattern
+
+next_ is next line it scans for pattern tokens on more than one line
