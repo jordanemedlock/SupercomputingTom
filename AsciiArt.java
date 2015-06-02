@@ -30,308 +30,232 @@ public class AsciiArt {
 		Scanner scan = new Scanner(System.in);
 		String str = "";
 		while (scan.hasNext()) {
+			str = scan.nextLine();
 			if (str.equals("quit")) {
 				return;
 			} else {
-			str = scan.nextLine();
 
 				for (int chars = 0; chars < str.length(); chars++){
 
 					char c = str.charAt(chars);
+					String letterString = "";
 					switch(c) {
 						case 'a': 
 						case 'A': 
-						letterA();
-						break;
+							letterString = letterA();
+							break;
 						case 'b': 
 						case 'B': 
-						letterB();
-						break;
+							letterString = letterB();
+							break;
 						case 'c': 
 						case 'C': 
-						letterC();
-						break;
+							letterString = letterC();
+							break;
 						case 'd': 
 						case 'D': 
-						letterD();
-						break;
+							letterString = letterD();
+							break;
 						case 'e': 
 						case 'E': 
-						letterE();
-						break;
+							letterString = letterE();
+							break;
 						case 'f': 
 						case 'F': 
-						letterF();
-						break;
+							letterString = letterF();
+							break;
 						case 'g': 
 						case 'G': 
-						letterG();
-						break;
+							letterString = letterG();
+							break;
 						case 'h': 
 						case 'H': 
-						letterH();
-						break;
+							letterString = letterH();
+							break;
 						case 'i': 
 						case 'I': 
-						letterI();
-						break;
+							letterString = letterI();
+							break;
 						case 'j': 
 						case 'J': 
-						letterJ();
-						break;
+							letterString = letterJ();
+							break;
 						case 'k': 
 						case 'K': 
-						letterK();
-						break;
+							letterString = letterK();
+							break;
 						case 'l': 
 						case 'L': 
-						letterL();
-						break;
+							letterString = letterL();
+							break;
 						case 'n': 
 						case 'N': 
-						letterN();
-						break;
+							letterString = letterN();
+							break;
 						case 'p': 
 						case 'P': 
-						letterP();
-						break;
+							letterString = letterP();
+							break;
 						case 'q': 
 						case 'Q': 
-						letterQ();
-						break;
+							letterString = letterQ();
+							break;
 						case 'r': 
 						case 'R': 
-						letterR();
-						break;
+							letterString = letterR();
+							break;
 						case 'S': 
 						case 's': 
-						letterS();
-						break;
+							letterString = letterS();
+							break;
 						case 't': 
 						case 'T': 
-						letterT();
-						break;
+							letterString = letterT();
+							break;
 						case 'u': 
 						case 'U': 
-						letterU();
-						break;
+							letterString = letterU();
+							break;
 						case 'v': 
 						case 'V': 
-						letterV();
-						break;
+							letterString = letterV();
+							break;
 						case 'W': 
 						case 'w': 
-						letterW();
-						break;
+							letterString = letterW();
+							break;
 						case 'X': 
 						case 'x': 
-						letterX();
-						break;
+							letterString = letterX();
+							break;
 						case 'y': 
 						case 'Y': 
-						letterY();
-						break;
+							letterString = letterY();
+							break;
 						case 'z': 
 						case 'Z': 
-						letterZ();
-						break;
+							letterString = letterZ();
+							break;
 
 						case 'o':
 						case 'O': 
-						letterO();
-						break;
+							letterString = letterO();
+							break;
 
 						case 'm':
 						case 'M': 
-						letterM();
-						break;
+							letterString = letterM();
+							break;
 
 					}
+					System.out.println(letterString);
 				}
 			}
 		}
 	}
 
-	public static void letterA(){
-		System.out.println("....#....");
-		System.out.println("...#.#...");
-		System.out.println("..#####..");
-		System.out.println(".#.....#.");
-		System.out.println("#.......#");
+	public static String letterA(){
+		return "\n....#....\n...#.#...\n..#####..\n.#.....#.\n#.......#";
 	}
-	public static void letterB(){
-		System.out.println("..#####..");
-		System.out.println("..#....#.");
-		System.out.println("..#####..");
-		System.out.println("..#....#.");
-		System.out.println("..#####..");
+
+	public static String letterB(){
+		return "\n..#####..\n..#....#.\n..#####..\n..#....#.\n..#####..";
 	}
-	public static void letterC(){
-		System.out.println("...####..");
-		System.out.println("..#......");
-		System.out.println("..#......");
-		System.out.println("..#......");
-		System.out.println("...####..");
+
+	public static String letterC(){
+		return "\n...####..\n..#......\n..#......\n..#......\n...####..";
 	}
-	public static void letterD(){
-		System.out.println("..####...");
-		System.out.println("..#...#..");
-		System.out.println("..#...#..");
-		System.out.println("..#...#..");
-		System.out.println("..####...");
+
+	public static String letterD(){
+		return "\n..####...\n..#...#..\n..#...#..\n..#...#..\n..####...";
 	}
-	public static void letterE(){
-		System.out.println("..#####..");
-		System.out.println("..#......");
-		System.out.println("..####...");
-		System.out.println("..#......");
-		System.out.println("..#####..");
+
+	public static String letterE(){
+		return "\n..#####..\n..#......\n..####...\n..#......\n..#####..";
 	}
-	public static void letterF(){
-		System.out.println("..#####..");
-		System.out.println("..#......");
-		System.out.println("..####...");
-		System.out.println("..#......");
-		System.out.println("..#......");
+
+	public static String letterF(){
+		return "\n..#####..\n..#......\n..####...\n..#......\n..#......";
 	}
-	public static void letterG(){
-		System.out.println("...####..");
-		System.out.println("..#......");
-		System.out.println("..#..###.");
-		System.out.println("..#....#.");
-		System.out.println("...####..");
+
+	public static String letterG(){
+		return "\n...####..\n..#......\n..#..###.\n..#....#.\n...####..";
 	}
-	public static void letterH(){
-		System.out.println("..#....#.");
-		System.out.println("..#....#.");
-		System.out.println("..######.");
-		System.out.println("..#....#.");
-		System.out.println("..#....#.");
+
+	public static String letterH(){
+		return "\n..#....#.\n..#....#.\n..######.\n..#....#.\n..#....#.";
 	}
-	public static void letterI(){
-		System.out.println(".#######.");
-		System.out.println("....#....");
-		System.out.println("....#....");
-		System.out.println("....#....");
-		System.out.println(".#######.");
+
+	public static String letterI(){
+		return "\n.#######.\n....#....\n....#....\n....#....\n.#######.";
 	}
-	public static void letterJ(){
-		System.out.println(".#######.");
-		System.out.println(".....#...");
-		System.out.println(".....#...");
-		System.out.println(".#...#...");
-		System.out.println("..###....");
+
+	public static String letterJ(){
+		return "\n.#######.\n.....#...\n.....#...\n.#...#...\n..###....";
 	}
-	public static void letterK(){
-		System.out.println("..#...#..");
-		System.out.println("..#..#...");
-		System.out.println("..###....");
-		System.out.println("..#..#...");
-		System.out.println("..#...#..");
+
+	public static String letterK(){ 
+		return "\n..#...#..\n..#..#...\n..###....\n..#..#...\n..#...#..";
 	}
-	public static void letterL(){
-		System.out.println("..#......");
-		System.out.println("..#......");
-		System.out.println("..#......");
-		System.out.println("..#......");
-		System.out.println("..######.");
+
+	public static String letterL(){
+		return "\n..#......\n..#......\n..#......\n..#......\n..######.";
 	}
-	public static void letterM(){
-		System.out.println(".#....#..");
-		System.out.println(".##..##..");
-		System.out.println(".#.##.#..");
-		System.out.println(".#....#..");
-		System.out.println(".#....#..");
+
+	public static String letterM(){
+		return "\n.#....#..\n.##..##..\n.#.##.#..\n.#....#..\n.#....#..";
 	}
-	public static void letterN(){
-		System.out.println(".#....#..");
-		System.out.println(".##...#..");
-		System.out.println(".#.#..#..");
-		System.out.println(".#..#.#..");
-		System.out.println(".#...##..");
+
+	public static String letterN(){
+		return "\n.#....#..\n.##...#..\n.#.#..#..\n.#..#.#..\n.#...##..";
 	}
-	public static void letterO(){
-		System.out.println("..####...");
-		System.out.println(".#....#..");
-		System.out.println(".#....#..");
-		System.out.println(".#....#..");
-		System.out.println("..####...");
+
+	public static String letterO(){
+		return "\n..####...\n.#....#..\n.#....#..\n.#....#..\n..####...";
 	}
-	public static void letterP(){
-		System.out.println("..####...");
-		System.out.println(".#....#..");
-		System.out.println(".#####...");
-		System.out.println(".#.......");
-		System.out.println(".#.......");
+
+	public static String letterP(){
+		return "\n..####...\n.#....#..\n.#####...\n.#.......\n.#.......";
 	}
-	public static void letterQ(){
-		System.out.println("..####...");
-		System.out.println(".#....#..");
-		System.out.println(".#....#..");
-		System.out.println(".#..#.#..");
-		System.out.println("..####...");
+
+	public static String letterQ(){
+		return "\n..####...\n.#....#..\n.#....#..\n.#..#.#..\n..####...";
 	}
-	public static void letterR(){
-		System.out.println(".#####...");
-		System.out.println(".#....#..");
-		System.out.println(".#####...");
-		System.out.println(".#...#...");
-		System.out.println(".#....#..");
+
+	public static String letterR(){
+		return "\n.#####...\n.#....#..\n.#####...\n.#...#...\n.#....#..";
 	}
-	public static void letterS(){
-		System.out.println("..#####..");
-		System.out.println(".#.......");
-		System.out.println(".######..");
-		System.out.println("......#..");
-		System.out.println(".#####...");
+
+	public static String letterS(){
+		return "\n..#####..\n.#.......\n.######..\n......#..\n.#####...";
 	}
-	public static void letterT(){
-		System.out.println(".#######.");
-		System.out.println("....#....");
-		System.out.println("....#....");
-		System.out.println("....#....");
-		System.out.println("....#....");
+
+	public static String letterT(){
+		return "\n.#######.\n....#....\n....#....\n....#....\n....#....";
 	}
-	public static void letterU(){
-		System.out.println(".#....#..");
-		System.out.println(".#....#..");
-		System.out.println(".#....#..");
-		System.out.println(".#....#..");
-		System.out.println("..####...");
+
+	public static String letterU(){
+		return "\n.#....#..\n.#....#..\n.#....#..\n.#....#..\n..####...";
 	}
-	public static void letterV(){
-		System.out.println(".#....#..");
-		System.out.println(".#....#..");
-		System.out.println(".#....#..");
-		System.out.println("..#..#...");
-		System.out.println("...##....");
+
+	public static String letterV(){
+		return "\n.#....#..\n.#....#..\n.#....#..\n..#..#...\n...##....";
 	}
-	public static void letterW(){
-		System.out.println(".#....#..");
-		System.out.println(".#....#..");
-		System.out.println(".#.##.#..");
-		System.out.println(".##..##..");
-		System.out.println(".#....#..");
+
+	public static String letterW(){
+		return "\n.#....#..\n.#....#..\n.#.##.#..\n.##..##..\n.#....#..";
 	}
-	public static void letterX(){
-		System.out.println(".#....#..");
-		System.out.println("..#..#...");
-		System.out.println("...##....");
-		System.out.println("..#..#...");
-		System.out.println(".#....#..");
+
+	public static String letterX(){
+		return "\n.#....#..\n..#..#...\n...##....\n..#..#...\n.#....#..";
 	}
-	public static void letterY(){
-		System.out.println(".#....#..");
-		System.out.println("..#..#...");
-		System.out.println("....#....");
-		System.out.println("....#....");
-		System.out.println("....#....");
+
+	public static String letterY(){
+		return "\n.#....#..\n..#..#...\n....#....\n....#....\n....#....";
 	}
-	public static void letterZ(){
-		System.out.println(".######..");
-		System.out.println(".....#...");
-		System.out.println("....#....");
-		System.out.println("...#.....");
-		System.out.println(".######..");
+
+	public static String letterZ(){
+		return "\n.######..\n.....#...\n....#....\n...#.....\n.######..";
 	}
+
 }
